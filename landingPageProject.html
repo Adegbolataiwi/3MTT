@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+
+<!--OBJECTIVE: The goal of this project is to design and develop a
+responsive landing page for a fictional product or service using
+HTML and CSS. The page should be visually appealing,
+mobile-friendly, and structured for a great user experience.-->
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Landing Page Design</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      header {
+        padding: 20px;
+
+        width: 100%;
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: url("https://img.freepik.com/free-vector/abstract-light-blue-wave-background_1055-3072.jpg?t=st=1741215262~exp=1741218862~hmac=8654af9aa9d20083ad29428f55ae237757049b4f0e8ce41c56c181b4c2aa91dd&w=740");
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      header > .logo_NavigationWrapper {
+        display: flex;
+        width: 90%;
+        justify-content: space-between;
+      }
+
+      .logo_NavigationWrapper > h1 {
+        font-size: 1.6rem;
+        color: rgb(4, 87, 1);
+      }
+
+      .logo_NavigationWrapper > nav ul {
+        display: flex;
+        gap: 30px;
+      }
+
+      .logo_NavigationWrapper > nav ul li {
+        list-style: none;
+      }
+
+      .logo_NavigationWrapper > nav ul li a {
+        text-decoration: none;
+        color: rgb(105, 107, 105);
+      }
+
+      .hero_section {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 90%;
+        height: 80%;
+        margin-top: 30px;
+        /* flex-wrap: wrap; */
+      }
+      .hero_section > .hero_description {
+        width: 40%;
+      }
+      .hero_section > .hero_description > h2 {
+        font-size: 40px;
+      }
+      .hero_section > .hero_description > p {
+        line-height: 30px;
+      }
+
+      .learnMore_Btn {
+        width: 150px;
+        border: 0;
+        height: 30px;
+        background-color: rgb(204, 194, 61);
+      }
+
+      section {
+        display: flex;
+        flex-direction: column;
+
+        align-items: center;
+        padding: 70px 0;
+      }
+      section div .feature_Wrapper {
+        display: flex;
+        flex-direction: column;
+        width: 250px;
+        align-items: center;
+      }
+
+      section .features_Wrapper {
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+        flex-wrap: wrap;
+      }
+
+      footer {
+        background-color: bisque;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        padding-top: 70px;
+      }
+
+      @media (max-width: 800px) {
+        header > .logo_NavigationWrapper {
+          flex-direction: column;
+          width: 100%;
+          gap: 20px;
+          align-items: center;
+        }
+
+        .logo_NavigationWrapper > nav ul {
+          gap: 20px;
+        }
+
+        .hero_section {
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+          gap: 30px;
+          margin-top: 50px;
+        }
+        .hero_section > .hero_description {
+          width: 90%;
+        }
+        .hero_section > .hero_description > h2 {
+          font-size: 35px;
+        }
+
+        .learnMore_Btn {
+          width: 150px;
+          border: 0;
+          height: 30px;
+          background-color: rgb(204, 194, 61);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <!-- LOGO AND NAVIGATION-->
+      <div class="logo_NavigationWrapper">
+        <h1>3MTT.</h1>
+        <nav>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Product</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <!-- HERO SECTION IMAGE AND DESCRIPTION-->
+      <div class="hero_section">
+        <div class="hero_description">
+          <h2>Innovation at it's Peak</h2>
+          <p>
+            3MTT is an initiative of the federal Government to raise three
+            million youth interested in tech to enhace the workforce of the
+            country
+          </p>
+          <button class="learnMore_Btn">learn More</button>
+        </div>
+
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRk5W6KExyMrkYVA3aiB9aMT9BufkDZ7h5ZKg&s"
+          alt=""
+          width="300"
+          height="300"
+          class="hero"
+        />
+      </div>
+    </header>
+
+    <section>
+      <h2>Features</h2>
+      <div class="features_Wrapper">
+        <div class="feature_Wrapper">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzwAAMBuhAVWnfdv-YrJ6TVAOEufv14DHtJA&s"
+            alt=""
+            width="250"
+            height="250"
+          />
+          <h3>Innovation</h3>
+          <p>
+            Innovation sparks progress, turning ideas into solutions that shape
+            the future.
+          </p>
+        </div>
+        <div class="feature_Wrapper">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlFej11R3OgHzr3uHyrG0C3kIKAxaKaK4tYg&s"
+            alt=""
+            width="250"
+            height="250"
+          />
+          <h3>Solution</h3>
+          <p>
+            A solution addresses problems, offering clarity, improvement, and
+            practical outcomes.
+          </p>
+        </div>
+        <div class="feature_Wrapper">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRk5W6KExyMrkYVA3aiB9aMT9BufkDZ7h5ZKg&s"
+            alt=""
+            width="250"
+            height="250"
+            class="hero"
+          />
+          <h3>Technology</h3>
+          <p>
+            Technology enhances efficiency, connects people, and drives
+            innovation across industries.
+          </p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="contact">
+        <p><b>Email:</b>info@3mtt.com</p>
+        <p><b>Phone No:</b>09012345678</p>
+      </div>
+      <p><small>copyright &copy; 2025</small></p>
+    </footer>
+  </body>
+</html>
